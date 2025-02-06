@@ -51,7 +51,7 @@ export default function Projects() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-            Here are some of the projects I've wasted my time on. 
+            Here are some of the projects I{"'"}ve wasted my time on. 
         </motion.p>
 
         <motion.ul
@@ -70,6 +70,7 @@ export default function Projects() {
           ))}
         </motion.ul>
       </motion.div>
+
       <motion.footer
         className="fixed bottom-0 left-0 w-full p-4 text-center text-sm text-gray-500 z-20"
         initial={{ opacity: 0 }}

@@ -35,7 +35,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-        I like making and breaking shit! I'm a 24 year old from the United States who loves networking and software development.
+        I like making and breaking shit! I{"'"}m a 24 year old from the United States who loves networking and software development.
         </motion.p>
 
         <motion.p
@@ -62,7 +62,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
         >
-          I really hope you don't, but incase you want to reach out to me, here's how you can do it.
+          I really hope you don{"'"}t, but incase you want to reach out to me, here{"'"}s how you can do it.
         </motion.p>
 
         <motion.div
@@ -92,6 +92,7 @@ export default function About() {
         >
           <div className="p-4 rounded-lg border border-zinc-800 shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+
             <div className="flex flex-wrap gap-2">
               <span className="bg-indigo-600 text-white py-1 px-2 rounded">React</span>
               <span className="bg-indigo-600 text-white py-1 px-2 rounded">Next</span>
@@ -100,6 +101,7 @@ export default function About() {
               <span className="bg-indigo-600 text-white py-1 px-2 rounded">TypeScript</span>
             </div>
           </div>
+
           <div className="p-4 rounded-lg border border-zinc-800 shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <div className="flex flex-wrap gap-2">
@@ -109,6 +111,7 @@ export default function About() {
               <span className="bg-indigo-600 text-white py-1 px-2 rounded">Express</span>
             </div>
           </div>
+
           <div className="p-4 rounded-lg border border-zinc-800 shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Misc</h3>
             <div className="flex flex-wrap gap-2">

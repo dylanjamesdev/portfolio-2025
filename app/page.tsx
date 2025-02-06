@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
 import Navbar from "../components/Navbar"
 import { FaNetworkWired, FaGithub } from "react-icons/fa"
 
@@ -45,6 +44,7 @@ export default function Home() {
         >
           Developer & Network Engineer
         </motion.p>
+
         <div className="flex space-x-2">
           <motion.a
             href="https://tritan.gg/network"
@@ -55,6 +55,7 @@ export default function Home() {
             <FaNetworkWired />
             <span>Network</span>
           </motion.a>
+
           <motion.a
             href="https://github.com/dylanjamesdev"
             className="flex items-center space-x-2 text-white py-2 px-4 rounded transition-colors"

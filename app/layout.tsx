@@ -3,7 +3,9 @@ import type { Metadata } from "next"
 import { Raleway } from "next/font/google"
 import type React from "react" 
 
-const inter = Raleway()
+const inter = Raleway({
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "dylan james - dev & neteng",
