@@ -35,7 +35,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-        I like making and breaking shit! I{"'"}m a 24 year old from the United States who loves networking and software development.
+        I{"'"}m a 24 year old from the United States who loves networking and software development.
         </motion.p>
 
         <motion.p
