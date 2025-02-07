@@ -16,16 +16,16 @@ export default function Projects() {
     { name: "Windy Pink", description: "A personal blog and portfolio site.", link: "https://windy.pink" },
     { name: "Authentication API", description: "An API for user authentication.", link: "https://github.com/Team-Tritan/Authentication-API" },
     { name: "Email Verification API", description: "An API for email verification.", link: "https://github.com/Team-Tritan/Email-Verification-API" },
-    { name: "OpenAI CLI Client", description: "A CLI client for OpenAI's GPT-3 API.", link: "https://github.com/Team-Tritan/OpenAI-Client"}
+    { name: "OpenAI CLI Client", description: "A CLI client for OpenAI's GPT-3 API.", link: "https://github.com/Team-Tritan/OpenAI-Client" }
   ];
 
   return (
-    <main className="relative h-screen w-screen overflow-auto bg-[#040405] text-white flex flex-col">
-      <div className="fixed top-0 left-0 w-full z-20">
+    <main className="relative min-h-screen w-screen overflow-auto bg-[#040405] text-white flex flex-col">
+      <div className="w-full z-20">
         <Navbar />
       </div>
       <motion.div
-        className="fixed inset-0 z-0"
+        className="inset-0 z-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.1 }}
         transition={{ duration: 2, yoyo: Infinity }}
@@ -42,7 +42,7 @@ export default function Projects() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-            Projects
+          Projects
         </motion.h3>
 
         <motion.p
@@ -51,7 +51,7 @@ export default function Projects() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-            Here are some of the projects I{"'"}ve wasted my time on. 
+          Here are some of the projects I{"'"}ve wasted my time on.
         </motion.p>
 
         <motion.ul
@@ -72,7 +72,7 @@ export default function Projects() {
       </motion.div>
 
       <motion.footer
-        className="fixed bottom-0 left-0 w-full p-4 text-center text-sm text-gray-500 z-20"
+        className="w-full p-4 text-center text-sm text-gray-500 z-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.6 }}

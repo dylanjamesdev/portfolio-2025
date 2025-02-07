@@ -3,10 +3,11 @@
 import { motion } from "framer-motion"
 import Navbar from "../components/Navbar"
 import { FaNetworkWired, FaGithub } from "react-icons/fa"
+import { BiKey } from "react-icons/bi"
 
 export default function Home() {
   return (
-    <main className="relative h-screen w-screen overflow-hidden bg-[#040405] text-white flex flex-col">
+    <main className="relative min-h-screen w-screen overflow-hidden bg-[#040405] text-white flex flex-col">
       <Navbar />
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-800 to-indigo-800 opacity-20"
@@ -64,6 +65,16 @@ export default function Home() {
           >
             <FaGithub />
             <span>GitHub</span>
+          </motion.a>
+
+          <motion.a
+            href="/pgp.txt"
+            className="flex items-center space-x-2 text-white py-2 px-4 rounded transition-colors"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <BiKey />
+            <span>PGP Key</span>
           </motion.a>
         </div>
       </motion.div>
